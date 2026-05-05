@@ -1,6 +1,7 @@
 package net.depedph.depedschoolcollectiondecoratives;
 
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Items;
+
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
@@ -27,6 +28,12 @@ public class DepEDSchoolCollectionDecoratives {
 
         //Items
         DepEd_Items.register_dscditems(modEventBus);
+
+        //Blocks
+
+        //Creative Tabs
+
+        //Tags
 
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
