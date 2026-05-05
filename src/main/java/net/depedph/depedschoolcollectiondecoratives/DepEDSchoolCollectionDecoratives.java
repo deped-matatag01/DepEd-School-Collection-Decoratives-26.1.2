@@ -1,5 +1,7 @@
 package net.depedph.depedschoolcollectiondecoratives;
 
+import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Items;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
@@ -22,17 +24,23 @@ public class DepEDSchoolCollectionDecoratives {
 
     public DepEDSchoolCollectionDecoratives(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
+
+        //Items
+        DepEd_Items.register_dscditems(modEventBus);
+
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        //minerals
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(DepEd_Items.DEPED_CORE);
+        }
     }
 
     @SubscribeEvent

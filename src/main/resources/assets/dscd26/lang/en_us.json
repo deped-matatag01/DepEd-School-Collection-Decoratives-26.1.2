@@ -1,13 +1,3 @@
 {
-  "itemGroup.dscd26": "Example Mod Tab",
-  "block.dscd26.example_block": "Example Block",
-  "item.dscd26.example_item": "Example Item",
-
-  "dscd26.configuration.title": "DepED School Collection Decoratives Configs",
-  "dscd26.configuration.section.dscd26.common.toml": "DepED School Collection Decoratives Configs",
-  "dscd26.configuration.section.dscd26.common.toml.title": "DepED School Collection Decoratives Configs",
-  "dscd26.configuration.items": "Item List",
-  "dscd26.configuration.logDirtBlock": "Log Dirt Block",
-  "dscd26.configuration.magicNumberIntroduction": "Magic Number Text",
-  "dscd26.configuration.magicNumber": "Magic Number"
+  "item.dscd26.deped_core": "DepED Core"
 }
