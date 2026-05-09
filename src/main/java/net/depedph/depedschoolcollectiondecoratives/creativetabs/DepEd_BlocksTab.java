@@ -20,6 +20,8 @@ public class DepEd_BlocksTab {
             .displayItems((itemDisplayParameters, output) -> {
 
                 output.accept(DepEd_Blocks.DEPED_BLOCK);
+                output.accept(DepEd_Blocks.GMATHS_BLOCK);
+                output.accept(DepEd_Blocks.GMANHS_BLOCK);
 
             }).build());
 

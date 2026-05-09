@@ -3,8 +3,8 @@
   "creativetabgroup.dscd26.deped_blocks_tab": "DepED SCD | Blocks",
 
   "block.dscd26.deped_block": "Block of DepED",
-  "block.dscd26.gmaths_block": "Block of GMATHS",
-  "block.dscd26.gmanhs_block": "Block of GMANHS",
+  "block.dscd26.block_of_gmaths": "Block of GMATHS",
+  "block.dscd26.block_of_gmanhs": "Block of GMANHS",
 
 
   "item.dscd26.deped_core": "DepED Core",

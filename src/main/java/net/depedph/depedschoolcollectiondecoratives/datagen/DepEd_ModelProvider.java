@@ -38,5 +38,11 @@ public class DepEd_ModelProvider extends ModelProvider {
 
         //blocks
         blockModels.createTrivialCube(DepEd_Blocks.DEPED_BLOCK.get());
+        blockModels.createTrivialCube(DepEd_Blocks.GMATHS_BLOCK.get());
+        blockModels.createTrivialCube(DepEd_Blocks.GMANHS_BLOCK.get());
+
+        //ores
+
+        //wooden blocks
     }
 }
