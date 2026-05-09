@@ -50,9 +50,17 @@ public class DepEDSchoolCollectionDecoratives {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         //minerals
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(DepEd_CoreItems.DEPED_CORE);
-            event.accept(DepEd_CoreItems.GMATHS_CORE);
-            event.accept(DepEd_CoreItems.GMANHS_CORE);
+            event.accept(DepEd_Ingredients.RAW_DEPED);
+            event.accept(DepEd_Ingredients.RAW_GMATHS);
+            event.accept(DepEd_Ingredients.RAW_GMANHS);
+
+            event.accept(DepEd_Ingredients.DEPED_INGOT);
+            event.accept(DepEd_Ingredients.GMATHS_INGOT);
+            event.accept(DepEd_Ingredients.GMANHS_NUGGET);
+
+            event.accept(DepEd_Ingredients.DEPED_NUGGET);
+            event.accept(DepEd_Ingredients.GMATHS_NUGGET);
+            event.accept(DepEd_Ingredients.GMANHS_NUGGET);
         }
     }
 
