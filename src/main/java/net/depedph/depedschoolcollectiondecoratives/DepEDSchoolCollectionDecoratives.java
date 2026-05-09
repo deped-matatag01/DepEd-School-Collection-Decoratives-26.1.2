@@ -1,6 +1,8 @@
 package net.depedph.depedschoolcollectiondecoratives;
 
-import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Items;
+import net.depedph.depedschoolcollectiondecoratives.creativetabs.DepED_ItemsTab;
+import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
+import net.depedph.depedschoolcollectiondecoratives.items.DepEd_CoreItems;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -27,11 +29,13 @@ public class DepEDSchoolCollectionDecoratives {
         modEventBus.addListener(this::commonSetup);
 
         //Items
-        DepEd_Items.register_dscditems(modEventBus);
+        DepEd_CoreItems.register_dscditems(modEventBus);
+        DepEd_Ingredients.register_dscdingredients(modEventBus);
 
         //Blocks
 
         //Creative Tabs
+        DepED_ItemsTab.register_dscditemstab(modEventBus);
 
         //Tags
 
@@ -46,7 +50,9 @@ public class DepEDSchoolCollectionDecoratives {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         //minerals
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(DepEd_Items.DEPED_CORE);
+            event.accept(DepEd_CoreItems.DEPED_CORE);
+            event.accept(DepEd_CoreItems.GMATHS_CORE);
+            event.accept(DepEd_CoreItems.GMANHS_CORE);
         }
     }
 

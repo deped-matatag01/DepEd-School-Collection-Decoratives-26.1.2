@@ -1,7 +1,8 @@
 package net.depedph.depedschoolcollectiondecoratives.datagen;
 
 import net.depedph.depedschoolcollectiondecoratives.DepEDSchoolCollectionDecoratives;
-import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Items;
+import net.depedph.depedschoolcollectiondecoratives.items.DepEd_CoreItems;
+import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -15,8 +16,23 @@ public class DepED_ModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
-        //super.registerModels(blockModels, itemModels);
 
-        itemModels.generateFlatItem(DepEd_Items.DEPED_CORE.get(), ModelTemplates.FLAT_ITEM);
+        //core items
+        itemModels.generateFlatItem(DepEd_CoreItems.DEPED_CORE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(DepEd_CoreItems.GMATHS_CORE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(DepEd_CoreItems.GMANHS_CORE.get(), ModelTemplates.FLAT_ITEM);
+
+        //raw mats
+        itemModels.generateFlatItem(DepEd_Ingredients.RAW_DEPED.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(DepEd_Ingredients.RAW_GMATHS.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(DepEd_Ingredients.RAW_GMANHS.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateFlatItem(DepEd_Ingredients.DEPED_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(DepEd_Ingredients.GMATHS_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(DepEd_Ingredients.GMANHS_INGOT.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateFlatItem(DepEd_Ingredients.DEPED_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(DepEd_Ingredients.GMATHS_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(DepEd_Ingredients.GMANHS_NUGGET.get(), ModelTemplates.FLAT_ITEM);
     }
 }

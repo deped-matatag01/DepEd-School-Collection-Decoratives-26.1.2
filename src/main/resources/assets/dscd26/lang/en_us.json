@@ -1,3 +1,7 @@
 {
-  "item.dscd26.deped_core": "DepED Core"
+  "creativetabgroup.dscd26.deped_items_tab": "DepED SCD | Items",
+
+  "item.dscd26.deped_core": "DepED Core",
+  "item.dscd26.gmaths_core": "GMATHS Core",
+  "item.dscd26.gmanhs_core": "GMANHS Core"
 }
