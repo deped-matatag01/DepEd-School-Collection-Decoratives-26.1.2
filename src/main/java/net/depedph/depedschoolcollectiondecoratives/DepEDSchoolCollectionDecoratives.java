@@ -1,6 +1,8 @@
 package net.depedph.depedschoolcollectiondecoratives;
 
-import net.depedph.depedschoolcollectiondecoratives.creativetabs.DepED_ItemsTab;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
+import net.depedph.depedschoolcollectiondecoratives.creativetabs.DepEd_BlocksTab;
+import net.depedph.depedschoolcollectiondecoratives.creativetabs.DepEd_ItemsTab;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_CoreItems;
 
@@ -33,9 +35,11 @@ public class DepEDSchoolCollectionDecoratives {
         DepEd_Ingredients.register_dscdingredients(modEventBus);
 
         //Blocks
+        DepEd_Blocks.register_dscdblocks(modEventBus);
 
         //Creative Tabs
-        DepED_ItemsTab.register_dscditemstab(modEventBus);
+        DepEd_ItemsTab.register_dscditemstab(modEventBus);
+        DepEd_BlocksTab.register_dscdblockstab(modEventBus);
 
         //Tags
 
@@ -48,19 +52,21 @@ public class DepEDSchoolCollectionDecoratives {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        //minerals
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(DepEd_Ingredients.RAW_DEPED);
-            event.accept(DepEd_Ingredients.RAW_GMATHS);
-            event.accept(DepEd_Ingredients.RAW_GMANHS);
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 
-            event.accept(DepEd_Ingredients.DEPED_INGOT);
-            event.accept(DepEd_Ingredients.GMATHS_INGOT);
-            event.accept(DepEd_Ingredients.GMANHS_NUGGET);
+            //raw minerals
+            event.accept(DepEd_Ingredients.RAW_DEPED.get());
+            event.accept(DepEd_Ingredients.RAW_GMATHS.get());
+            event.accept(DepEd_Ingredients.RAW_GMANHS.get());
 
-            event.accept(DepEd_Ingredients.DEPED_NUGGET);
-            event.accept(DepEd_Ingredients.GMATHS_NUGGET);
-            event.accept(DepEd_Ingredients.GMANHS_NUGGET);
+            event.accept(DepEd_Ingredients.DEPED_INGOT.get());
+            event.accept(DepEd_Ingredients.GMATHS_NUGGET.get());
+            event.accept(DepEd_Ingredients.GMANHS_INGOT.get());
+
+            event.accept(DepEd_Ingredients.DEPED_NUGGET.get());
+            event.accept(DepEd_Ingredients.GMATHS_INGOT.get());
+            event.accept(DepEd_Ingredients.GMANHS_NUGGET.get());
+
         }
     }
 

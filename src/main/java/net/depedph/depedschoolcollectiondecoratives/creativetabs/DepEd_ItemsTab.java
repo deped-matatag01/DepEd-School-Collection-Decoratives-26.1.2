@@ -12,7 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class DepED_ItemsTab {
+public class DepEd_ItemsTab {
     public static final DeferredRegister<CreativeModeTab> DEPED_DSCD_ITEMS_TAB = DeferredRegister.create(
             Registries.CREATIVE_MODE_TAB, DepEDSchoolCollectionDecoratives.MOD_ID);
 

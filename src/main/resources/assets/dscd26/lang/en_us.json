@@ -1,7 +1,23 @@
 {
   "creativetabgroup.dscd26.deped_items_tab": "DepED SCD | Items",
+  "creativetabgroup.dscd26.deped_blocks_tab": "DepED SCD | Blocks",
+
+  "block.dscd26.deped_block": "Block of DepEd",
+  "block.dscd26.gmaths_block": "Block of GMATHS",
+  "block.dscd26.gmanhs_block": "Block of GMANHS",
+
 
   "item.dscd26.deped_core": "DepED Core",
   "item.dscd26.gmaths_core": "GMATHS Core",
-  "item.dscd26.gmanhs_core": "GMANHS Core"
+  "item.dscd26.gmanhs_core": "GMANHS Core",
+
+  "item.dscd26.raw_deped": "Raw DepED",
+  "item.dscd26.raw_gmaths": "Raw GMATHS",
+  "item.dscd26.raw_gmanhs": "Raw GMANHS",
+  "item.dscd26.deped_ingot": "DepED Ingot",
+  "item.dscd26.gmaths_ingot": "GMATHS Ingot",
+  "item.dscd26.gmanhs_ingot": "GMANHS Ingot",
+  "item.dscd26.deped_nugget": "DepED Nugget",
+  "item.dscd26.gmaths_nugget": "GMATHS Nugget",
+  "item.dscd26.gmanhs_nugget": "GMANHS Nugget"
 }

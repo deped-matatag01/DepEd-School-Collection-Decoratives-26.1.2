@@ -1,6 +1,6 @@
 package net.depedph.depedschoolcollectiondecoratives;
 
-import net.depedph.depedschoolcollectiondecoratives.datagen.DepED_ModelProvider;
+import net.depedph.depedschoolcollectiondecoratives.datagen.DepEd_ModelProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -15,6 +15,6 @@ public class DepED_DataGens {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
 
-        generator.addProvider(true, new DepED_ModelProvider(packOutput));
+        generator.addProvider(true, new DepEd_ModelProvider(packOutput));
     }
 }

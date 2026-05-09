@@ -1,6 +1,7 @@
 package net.depedph.depedschoolcollectiondecoratives.datagen;
 
 import net.depedph.depedschoolcollectiondecoratives.DepEDSchoolCollectionDecoratives;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_CoreItems;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -9,8 +10,8 @@ import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.data.PackOutput;
 
-public class DepED_ModelProvider extends ModelProvider {
-    public DepED_ModelProvider(PackOutput output) {
+public class DepEd_ModelProvider extends ModelProvider {
+    public DepEd_ModelProvider(PackOutput output) {
         super(output, DepEDSchoolCollectionDecoratives.MOD_ID);
     }
 
@@ -34,5 +35,8 @@ public class DepED_ModelProvider extends ModelProvider {
         itemModels.generateFlatItem(DepEd_Ingredients.DEPED_NUGGET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(DepEd_Ingredients.GMATHS_NUGGET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(DepEd_Ingredients.GMANHS_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+
+        //blocks
+        blockModels.createTrivialCube(DepEd_Blocks.DEPED_BLOCK.get());
     }
 }
