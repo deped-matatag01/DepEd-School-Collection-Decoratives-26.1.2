@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "deped_ingots",
+  "key": {
+    "D": "dscd26:deped_nugget"
+  },
+  "pattern": [
+    "DDD",
+    "DDD",
+    "DDD"
+  ],
+  "result": {
+    "id": "dscd26:deped_ingot"
+  }
+}

@@ -2,6 +2,7 @@ package net.depedph.depedschoolcollectiondecoratives.datagen;
 
 import net.depedph.depedschoolcollectiondecoratives.DepEDSchoolCollectionDecoratives;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_OreBlocks;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_CoreItems;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -36,12 +37,27 @@ public class DepEd_ModelProvider extends ModelProvider {
         itemModels.generateFlatItem(DepEd_Ingredients.GMATHS_NUGGET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(DepEd_Ingredients.GMANHS_NUGGET.get(), ModelTemplates.FLAT_ITEM);
 
-        //blocks
+        //deped blocks
         blockModels.createTrivialCube(DepEd_Blocks.DEPED_BLOCK.get());
         blockModels.createTrivialCube(DepEd_Blocks.GMATHS_BLOCK.get());
         blockModels.createTrivialCube(DepEd_Blocks.GMANHS_BLOCK.get());
 
-        //ores
+        //deped decorative blocks
+        blockModels.createTrivialCube(DepEd_Blocks.THE_GMATHS_TORCH.get());
+        blockModels.createTrivialCube(DepEd_Blocks.THE_GMATHS_TORCH_MK_II.get());
+
+        //ores and raw blocks
+        blockModels.createTrivialCube(DepEd_OreBlocks.DEPED_ORE.get());
+        blockModels.createTrivialCube(DepEd_OreBlocks.GMATHS_ORE.get());
+        blockModels.createTrivialCube(DepEd_OreBlocks.GMANHS_ORE.get());
+
+        blockModels.createTrivialCube(DepEd_OreBlocks.DEEPSLATE_DEPED_ORE.get());
+        blockModels.createTrivialCube(DepEd_OreBlocks.DEEPSLATE_GMATHS_ORE.get());
+        blockModels.createTrivialCube(DepEd_OreBlocks.DEEPSLATE_GMANHS_ORE.get());
+
+        blockModels.createTrivialCube(DepEd_OreBlocks.RAW_DEPED_BLOCK.get());
+        blockModels.createTrivialCube(DepEd_OreBlocks.RAW_GMATHS_BLOCK.get());
+        blockModels.createTrivialCube(DepEd_OreBlocks.RAW_GMANHS_BLOCK.get());
 
         //wooden blocks
     }

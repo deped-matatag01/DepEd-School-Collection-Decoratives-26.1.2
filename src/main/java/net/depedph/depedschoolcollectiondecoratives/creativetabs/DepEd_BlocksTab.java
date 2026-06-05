@@ -2,6 +2,7 @@ package net.depedph.depedschoolcollectiondecoratives.creativetabs;
 
 import net.depedph.depedschoolcollectiondecoratives.DepEDSchoolCollectionDecoratives;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_OreBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,9 +20,59 @@ public class DepEd_BlocksTab {
             .icon(() -> new ItemStack(DepEd_Blocks.DEPED_BLOCK.get())).title(Component.translatable("creativetabgroup.dscd26.deped_blocks_tab"))
             .displayItems((itemDisplayParameters, output) -> {
 
+                //deped blocks
                 output.accept(DepEd_Blocks.DEPED_BLOCK);
                 output.accept(DepEd_Blocks.GMATHS_BLOCK);
                 output.accept(DepEd_Blocks.GMANHS_BLOCK);
+
+                //deped decorative blocks
+                output.accept(DepEd_Blocks.THE_GMATHS_TORCH);
+                output.accept(DepEd_Blocks.THE_GMATHS_TORCH_MK_II);
+
+                //ores and raw blocks
+                output.accept(DepEd_OreBlocks.DEPED_ORE);
+                output.accept(DepEd_OreBlocks.GMATHS_ORE);
+                output.accept(DepEd_OreBlocks.GMANHS_ORE);
+
+                output.accept(DepEd_OreBlocks.DEEPSLATE_DEPED_ORE);
+                output.accept(DepEd_OreBlocks.DEEPSLATE_GMATHS_ORE);
+                output.accept(DepEd_OreBlocks.DEEPSLATE_GMANHS_ORE);
+
+                output.accept(DepEd_OreBlocks.RAW_DEPED_BLOCK);
+                output.accept(DepEd_OreBlocks.RAW_GMATHS_BLOCK);
+                output.accept(DepEd_OreBlocks.RAW_GMANHS_BLOCK);
+
+                //White colored planks
+
+                //Light gray colored planks
+
+                //Gray colored planks
+
+                //Black colored planks
+
+                //Brown colored planks
+
+                //Red colored planks
+
+                //Orange colored planks
+
+                //Yellow colored planks
+
+                //Lime colored planks
+
+                //Green colored planks
+
+                //Cyan colored planks
+
+                //Light blue colored planks
+
+                //Blue colored planks
+
+                //Purple colored planks
+
+                //Magenta colored planks
+
+                //Pink colored planks
 
             }).build());
 

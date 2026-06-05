@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dscd26:block_of_gmanhs"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "dscd26:blocks/block_of_gmanhs"
+}

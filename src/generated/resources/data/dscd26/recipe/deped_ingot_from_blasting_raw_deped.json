@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "deped_ingot_smeltables",
+  "ingredient": "dscd26:raw_deped",
+  "result": {
+    "id": "dscd26:deped_ingot"
+  }
+}

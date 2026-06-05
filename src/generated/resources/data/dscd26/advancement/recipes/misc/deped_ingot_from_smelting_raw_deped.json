@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_deped": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dscd26:raw_deped"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dscd26:deped_ingot_from_smelting_raw_deped"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_deped"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dscd26:deped_ingot_from_smelting_raw_deped"
+    ]
+  }
+}

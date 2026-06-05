@@ -1,6 +1,8 @@
 package net.depedph.depedschoolcollectiondecoratives;
 
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_OreBlocks;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_WoodenBlocks;
 import net.depedph.depedschoolcollectiondecoratives.creativetabs.DepEd_BlocksTab;
 import net.depedph.depedschoolcollectiondecoratives.creativetabs.DepEd_ItemsTab;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
@@ -36,6 +38,8 @@ public class DepEDSchoolCollectionDecoratives {
 
         //Blocks
         DepEd_Blocks.register_dscdblocks(modEventBus);
+        DepEd_OreBlocks.register_dscdblocks(modEventBus);
+        DepEd_WoodenBlocks.register_dscdblocks(modEventBus);
 
         //Creative Tabs
         DepEd_ItemsTab.register_dscditemstab(modEventBus);

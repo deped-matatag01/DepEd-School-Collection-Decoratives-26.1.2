@@ -3,9 +3,29 @@
   "creativetabgroup.dscd26.deped_blocks_tab": "DepED SCD | Blocks",
 
   "block.dscd26.deped_block": "Block of DepED",
+
   "block.dscd26.block_of_gmaths": "Block of GMATHS",
+
   "block.dscd26.block_of_gmanhs": "Block of GMANHS",
 
+  "block.dscd26.deped_ore": "DepED Ore",
+  "block.dscd26.deepslate_deped_ore": "Deepslate DepED Ore",
+  "block.dscd26.gmaths_ore": "GMATHS Ore",
+  "block.dscd26.deepslate_gmaths_ore": "Deepslate GMATHS Ore",
+  "block.dscd26.gmanhs_ore": "GMANHS Ore",
+  "block.dscd26.deepslate_gmanhs_ore": "Deepslate GMANHS Ore",
+
+  "block.dscd26.raw_deped_block": "Raw DepED Block",
+  "block.dscd26.raw_gmaths_block": "Raw GMATHS Block",
+  "block.dscd26.raw_gmanhs_block": "Raw GMANHS Block",
+
+  "block.dscd26.sir_elie_block": "Sir Elizer Alvarez Block",
+  "block.dscd26.sir_elie_block_body": "Body of Sir Elizer Alvarez Block",
+  "block.dscd26.the_gmaths_torch": "The GMATHS Torch",
+  "block.dscd26.the_gmaths_torch_mk_ii": "The GMATHS Torch Mark 2",
+  "block.dscd26.yes_o": "Yes-O Environmentalist",
+  "block.dscd26.sugarcane_block": "Block of Sugarcane",
+  "block.dscd26.baked_sugarcane_block": "Block of Baked Sugarcane",
 
   "item.dscd26.deped_core": "DepED Core",
   "item.dscd26.gmaths_core": "GMATHS Core",

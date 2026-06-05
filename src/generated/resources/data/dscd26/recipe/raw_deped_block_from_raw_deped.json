@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "deped_rawblocky_materials",
+  "key": {
+    "D": "dscd26:raw_deped"
+  },
+  "pattern": [
+    "DDD",
+    "DDD",
+    "DDD"
+  ],
+  "result": {
+    "id": "dscd26:raw_deped_block"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "deped_ingot_smeltables",
+  "ingredient": "dscd26:deped_ore",
+  "result": {
+    "id": "dscd26:deped_ingot"
+  }
+}
