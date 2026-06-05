@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "deped_ingots",
+  "key": {
+    "G": "dscd26:gmaths_nugget"
+  },
+  "pattern": [
+    "GGG",
+    "GGG",
+    "GGG"
+  ],
+  "result": {
+    "id": "dscd26:gmaths_ingot"
+  }
+}

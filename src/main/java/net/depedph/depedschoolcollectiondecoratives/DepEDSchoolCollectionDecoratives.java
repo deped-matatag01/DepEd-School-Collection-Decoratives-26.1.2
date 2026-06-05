@@ -5,6 +5,7 @@ import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_OreBlocks;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_WoodenBlocks;
 import net.depedph.depedschoolcollectiondecoratives.creativetabs.DepEd_BlocksTab;
 import net.depedph.depedschoolcollectiondecoratives.creativetabs.DepEd_ItemsTab;
+import net.depedph.depedschoolcollectiondecoratives.creativetabs.DepEd_WoodenBlocksTab;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_CoreItems;
 
@@ -44,6 +45,7 @@ public class DepEDSchoolCollectionDecoratives {
         //Creative Tabs
         DepEd_ItemsTab.register_dscditemstab(modEventBus);
         DepEd_BlocksTab.register_dscdblockstab(modEventBus);
+        DepEd_WoodenBlocksTab.register_dscdwoodenblockstab(modEventBus);
 
         //Tags
 

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dscd26:block/gmaths_slab"
+    },
+    "type=double": {
+      "model": "dscd26:block/block_of_gmaths"
+    },
+    "type=top": {
+      "model": "dscd26:block/gmaths_slab_top"
+    }
+  }
+}

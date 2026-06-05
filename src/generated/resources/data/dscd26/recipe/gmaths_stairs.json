@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "deped_stairs",
+  "key": {
+    "#": "dscd26:block_of_gmaths"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "dscd26:gmaths_stairs"
+  }
+}

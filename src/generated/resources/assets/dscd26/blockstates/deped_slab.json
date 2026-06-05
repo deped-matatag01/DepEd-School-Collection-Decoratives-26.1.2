@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dscd26:block/deped_slab"
+    },
+    "type=double": {
+      "model": "dscd26:block/deped_block"
+    },
+    "type=top": {
+      "model": "dscd26:block/deped_slab_top"
+    }
+  }
+}

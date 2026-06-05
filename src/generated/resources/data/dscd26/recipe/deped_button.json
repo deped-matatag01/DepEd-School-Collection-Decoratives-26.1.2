@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "deped_buttons",
+  "ingredients": [
+    "dscd26:deped_block"
+  ],
+  "result": {
+    "id": "dscd26:deped_button"
+  }
+}

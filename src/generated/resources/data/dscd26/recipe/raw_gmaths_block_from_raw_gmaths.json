@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "deped_rawblocky_materials",
+  "key": {
+    "G": "dscd26:raw_gmaths"
+  },
+  "pattern": [
+    "GGG",
+    "GGG",
+    "GGG"
+  ],
+  "result": {
+    "id": "dscd26:raw_gmaths_block"
+  }
+}

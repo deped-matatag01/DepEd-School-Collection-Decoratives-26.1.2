@@ -24,7 +24,19 @@ public class DepEd_BlockTagsDataProvider extends BlockTagsProvider {
 
                 //deped blocks
                 .add(DepEd_Blocks.DEPED_BLOCK.get())
+                .add(DepEd_Blocks.DEPED_STAIRS.get())
+                .add(DepEd_Blocks.DEPED_SLAB.get())
+                .add(DepEd_Blocks.DEPED_WALL.get())
+                .add(DepEd_Blocks.DEPED_BUTTON.get())
+                .add(DepEd_Blocks.DEPED_PRESSURE_PLATE.get())
+
                 .add(DepEd_Blocks.GMATHS_BLOCK.get())
+                .add(DepEd_Blocks.GMATHS_STAIRS.get())
+                .add(DepEd_Blocks.GMATHS_SLAB.get())
+                .add(DepEd_Blocks.GMATHS_WALL.get())
+                .add(DepEd_Blocks.GMATHS_BUTTON.get())
+                .add(DepEd_Blocks.GMATHS_PRESSURE_PLATE.get())
+
                 .add(DepEd_Blocks.GMATHS_BLOCK.get())
 
                 //deped decorative blocks
@@ -56,6 +68,11 @@ public class DepEd_BlockTagsDataProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_STONE_TOOL)
 
                 .add(DepEd_Blocks.DEPED_BLOCK.get())
+                .add(DepEd_Blocks.DEPED_STAIRS.get())
+                .add(DepEd_Blocks.DEPED_SLAB.get())
+                .add(DepEd_Blocks.DEPED_WALL.get())
+                .add(DepEd_Blocks.DEPED_BUTTON.get())
+                .add(DepEd_Blocks.DEPED_PRESSURE_PLATE.get())
 
                 .add(DepEd_OreBlocks.DEPED_ORE.get())
                 .add(DepEd_OreBlocks.DEEPSLATE_DEPED_ORE.get())
@@ -64,6 +81,11 @@ public class DepEd_BlockTagsDataProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_IRON_TOOL)
 
                 .add(DepEd_Blocks.GMATHS_BLOCK.get())
+                .add(DepEd_Blocks.GMATHS_STAIRS.get())
+                .add(DepEd_Blocks.GMATHS_SLAB.get())
+                .add(DepEd_Blocks.GMATHS_WALL.get())
+                .add(DepEd_Blocks.GMATHS_BUTTON.get())
+                .add(DepEd_Blocks.GMATHS_PRESSURE_PLATE.get())
 
                 .add(DepEd_OreBlocks.GMATHS_ORE.get())
                 .add(DepEd_OreBlocks.DEEPSLATE_GMATHS_ORE.get())
@@ -83,7 +105,25 @@ public class DepEd_BlockTagsDataProvider extends BlockTagsProvider {
                 .add(DepEd_OreBlocks.RAW_GMANHS_BLOCK.get());
 
         //block tags
-        tag(BlockTags.WALLS);
+        tag(BlockTags.STAIRS)
+                .add(DepEd_Blocks.DEPED_STAIRS.get())
+                .add(DepEd_Blocks.GMATHS_STAIRS.get());
+
+        tag(BlockTags.SLABS)
+                .add(DepEd_Blocks.DEPED_SLAB.get())
+                .add(DepEd_Blocks.GMATHS_SLAB.get());
+
+        tag(BlockTags.WALLS)
+                .add(DepEd_Blocks.DEPED_WALL.get())
+                .add(DepEd_Blocks.GMATHS_WALL.get());
+
+        tag(BlockTags.STONE_BUTTONS)
+                .add(DepEd_Blocks.DEPED_BUTTON.get())
+                .add(DepEd_Blocks.GMATHS_BUTTON.get());
+
+        tag(BlockTags.STONE_PRESSURE_PLATES)
+                .add(DepEd_Blocks.DEPED_PRESSURE_PLATE.get())
+                .add(DepEd_Blocks.GMATHS_PRESSURE_PLATE.get());
 
         //wooden block tags
         tag(BlockTags.PLANKS);
@@ -95,5 +135,9 @@ public class DepEd_BlockTagsDataProvider extends BlockTagsProvider {
         tag(BlockTags.WOODEN_FENCES);
 
         tag(BlockTags.FENCE_GATES);
+
+        tag(BlockTags.WOODEN_BUTTONS);
+
+        tag(BlockTags.WOODEN_PRESSURE_PLATES);
     }
 }

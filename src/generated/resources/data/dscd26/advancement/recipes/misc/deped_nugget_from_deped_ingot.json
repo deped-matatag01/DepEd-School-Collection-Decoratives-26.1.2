@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deped_nugget": {
+    "has_deped_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "dscd26:deped_nugget"
+            "items": "dscd26:deped_ingot"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_deped_nugget"
+      "has_deped_ingot"
     ]
   ],
   "rewards": {

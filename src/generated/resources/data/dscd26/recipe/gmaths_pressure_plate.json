@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "dscd26:block_of_gmaths"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "dscd26:gmaths_pressure_plate"
+  }
+}

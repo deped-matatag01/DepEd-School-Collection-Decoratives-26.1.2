@@ -3,8 +3,18 @@
   "creativetabgroup.dscd26.deped_blocks_tab": "DepED SCD | Blocks",
 
   "block.dscd26.deped_block": "Block of DepED",
+  "block.dscd26.deped_stairs": "DepED Stairs",
+  "block.dscd26.deped_slab": "DepED Slab",
+  "block.dscd26.deped_wall": "DepED Wall",
+  "block.dscd26.deped_button": "DepED Button",
+  "block.dscd26.deped_pressure_plate": "DepED Pressure Plate",
 
   "block.dscd26.block_of_gmaths": "Block of GMATHS",
+  "block.dscd26.gmaths_stairs": "GMATHS Stairs",
+  "block.dscd26.gmaths_slab": "GMATHS Slab",
+  "block.dscd26.gmaths_wall": "GMATHS Wall",
+  "block.dscd26.gmaths_button": "GMATHS Button",
+  "block.dscd26.gmaths_pressure_plate": "GMATHS Pressure Plate",
 
   "block.dscd26.block_of_gmanhs": "Block of GMANHS",
 
@@ -39,5 +49,6 @@
   "item.dscd26.gmanhs_ingot": "GMANHS Ingot",
   "item.dscd26.deped_nugget": "DepED Nugget",
   "item.dscd26.gmaths_nugget": "GMATHS Nugget",
-  "item.dscd26.gmanhs_nugget": "GMANHS Nugget"
+  "item.dscd26.gmanhs_nugget": "GMANHS Nugget",
+  "creativetabgroup.dscd26.deped_wooden_blocks_tab": "DepED SCD | Wooden Blocks"
 }

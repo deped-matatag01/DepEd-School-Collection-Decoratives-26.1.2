@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "dscd26:deped_block"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "dscd26:deped_pressure_plate"
+  }
+}

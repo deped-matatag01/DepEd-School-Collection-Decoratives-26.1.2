@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "deped_block",
+  "key": {
+    "C": "dscd26:gmaths_core",
+    "S": "#minecraft:slabs",
+    "W": "minecraft:netherrack"
+  },
+  "pattern": [
+    "WSW",
+    "SCS",
+    "WSW"
+  ],
+  "result": {
+    "id": "dscd26:block_of_gmaths"
+  }
+}

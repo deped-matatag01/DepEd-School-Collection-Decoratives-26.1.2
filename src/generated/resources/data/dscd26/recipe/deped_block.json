@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "deped_block",
+  "key": {
+    "C": "dscd26:deped_core",
+    "S": "dscd26:deped_ingot",
+    "W": "#minecraft:stone_crafting_materials"
+  },
+  "pattern": [
+    "WSW",
+    "SCS",
+    "WSW"
+  ],
+  "result": {
+    "id": "dscd26:deped_block"
+  }
+}

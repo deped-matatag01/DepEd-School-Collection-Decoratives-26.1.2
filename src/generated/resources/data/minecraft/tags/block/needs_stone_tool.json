@@ -1,6 +1,11 @@
 {
   "values": [
     "dscd26:deped_block",
+    "dscd26:deped_stairs",
+    "dscd26:deped_slab",
+    "dscd26:deped_wall",
+    "dscd26:deped_button",
+    "dscd26:deped_pressure_plate",
     "dscd26:deped_ore",
     "dscd26:deepslate_deped_ore",
     "dscd26:raw_deped_block"

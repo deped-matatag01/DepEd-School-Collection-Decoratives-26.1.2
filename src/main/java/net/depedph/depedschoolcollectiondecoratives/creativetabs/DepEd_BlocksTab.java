@@ -22,7 +22,19 @@ public class DepEd_BlocksTab {
 
                 //deped blocks
                 output.accept(DepEd_Blocks.DEPED_BLOCK);
+                output.accept(DepEd_Blocks.DEPED_STAIRS);
+                output.accept(DepEd_Blocks.DEPED_SLAB);
+                output.accept(DepEd_Blocks.DEPED_WALL);
+                output.accept(DepEd_Blocks.DEPED_BUTTON);
+                output.accept(DepEd_Blocks.DEPED_PRESSURE_PLATE);
+
                 output.accept(DepEd_Blocks.GMATHS_BLOCK);
+                output.accept(DepEd_Blocks.GMATHS_STAIRS);
+                output.accept(DepEd_Blocks.GMATHS_SLAB);
+                output.accept(DepEd_Blocks.GMATHS_WALL);
+                output.accept(DepEd_Blocks.GMATHS_BUTTON);
+                output.accept(DepEd_Blocks.GMATHS_PRESSURE_PLATE);
+
                 output.accept(DepEd_Blocks.GMANHS_BLOCK);
 
                 //deped decorative blocks
@@ -41,38 +53,6 @@ public class DepEd_BlocksTab {
                 output.accept(DepEd_OreBlocks.RAW_DEPED_BLOCK);
                 output.accept(DepEd_OreBlocks.RAW_GMATHS_BLOCK);
                 output.accept(DepEd_OreBlocks.RAW_GMANHS_BLOCK);
-
-                //White colored planks
-
-                //Light gray colored planks
-
-                //Gray colored planks
-
-                //Black colored planks
-
-                //Brown colored planks
-
-                //Red colored planks
-
-                //Orange colored planks
-
-                //Yellow colored planks
-
-                //Lime colored planks
-
-                //Green colored planks
-
-                //Cyan colored planks
-
-                //Light blue colored planks
-
-                //Blue colored planks
-
-                //Purple colored planks
-
-                //Magenta colored planks
-
-                //Pink colored planks
 
             }).build());
 

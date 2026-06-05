@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "deped_nuggets",
+  "ingredients": [
+    "dscd26:gmaths_ingot"
+  ],
+  "result": {
+    "count": 9,
+    "id": "dscd26:gmaths_nugget"
+  }
+}

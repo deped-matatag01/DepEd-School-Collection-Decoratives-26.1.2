@@ -32,7 +32,19 @@ public class DepEd_LootTableDataProvider extends BlockLootSubProvider {
 
         //deped blocks
         dropSelf(DepEd_Blocks.DEPED_BLOCK.get());
+        dropSelf(DepEd_Blocks.DEPED_STAIRS.get());
+        add(DepEd_Blocks.DEPED_SLAB.get(), this::createSlabItemTable);
+        dropSelf(DepEd_Blocks.DEPED_WALL.get());
+        dropSelf(DepEd_Blocks.DEPED_BUTTON.get());
+        dropSelf(DepEd_Blocks.DEPED_PRESSURE_PLATE.get());
+
         dropSelf(DepEd_Blocks.GMATHS_BLOCK.get());
+        dropSelf(DepEd_Blocks.GMATHS_STAIRS.get());
+        add(DepEd_Blocks.GMATHS_SLAB.get(), this::createSlabItemTable);
+        dropSelf(DepEd_Blocks.GMATHS_WALL.get());
+        dropSelf(DepEd_Blocks.GMATHS_BUTTON.get());
+        dropSelf(DepEd_Blocks.GMATHS_PRESSURE_PLATE.get());
+
         dropSelf(DepEd_Blocks.GMANHS_BLOCK.get());
 
         //deped decorative blocks

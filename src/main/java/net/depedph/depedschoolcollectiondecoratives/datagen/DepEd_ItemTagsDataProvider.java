@@ -1,11 +1,13 @@
 package net.depedph.depedschoolcollectiondecoratives.datagen;
 
 import net.depedph.depedschoolcollectiondecoratives.DepEDSchoolCollectionDecoratives;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_CoreItems;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.depedph.depedschoolcollectiondecoratives.tags.DepEd_Tags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
@@ -53,7 +55,24 @@ public class DepEd_ItemTagsDataProvider extends ItemTagsProvider {
                 .add(DepEd_CoreItems.GMATHS_CORE.get())
                 .add(DepEd_CoreItems.GMANHS_CORE.get());
 
-        //Flammability Items
+        //normal stone items
+        tag(ItemTags.STAIRS)
+                .add(DepEd_Blocks.DEPED_STAIRS.asItem())
+                .add(DepEd_Blocks.GMATHS_STAIRS.asItem());
+
+        tag(ItemTags.SLABS)
+                .add(DepEd_Blocks.DEPED_SLAB.asItem())
+                .add(DepEd_Blocks.GMATHS_SLAB.asItem());
+
+        tag(ItemTags.WALLS)
+                .add(DepEd_Blocks.DEPED_WALL.asItem())
+                .add(DepEd_Blocks.GMATHS_WALL.asItem());
+
+        tag(ItemTags.STONE_BUTTONS)
+                .add(DepEd_Blocks.DEPED_BUTTON.asItem())
+                .add(DepEd_Blocks.GMATHS_BUTTON.asItem());
+
+        //Flammability Wooden Items
         tag(ItemTags.PLANKS);
 
         tag(ItemTags.WOODEN_STAIRS);
@@ -63,5 +82,9 @@ public class DepEd_ItemTagsDataProvider extends ItemTagsProvider {
         tag(ItemTags.WOODEN_FENCES);
 
         tag(ItemTags.FENCE_GATES);
+
+        tag(ItemTags.WOODEN_BUTTONS);
+
+        tag(ItemTags.WOODEN_PRESSURE_PLATES);
     }
 }
