@@ -7,7 +7,6 @@ import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.depedph.depedschoolcollectiondecoratives.tags.DepEd_Tags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;

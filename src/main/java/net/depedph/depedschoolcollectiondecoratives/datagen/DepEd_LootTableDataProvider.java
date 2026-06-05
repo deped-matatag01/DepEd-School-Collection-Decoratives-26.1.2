@@ -2,7 +2,6 @@ package net.depedph.depedschoolcollectiondecoratives.datagen;
 
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_OreBlocks;
-import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_WoodenBlocks;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
