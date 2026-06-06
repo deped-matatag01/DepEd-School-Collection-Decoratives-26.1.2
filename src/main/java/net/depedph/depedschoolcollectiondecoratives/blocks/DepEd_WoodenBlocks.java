@@ -32,7 +32,7 @@ public class DepEd_WoodenBlocks {
     public static final DeferredBlock<Block> WHITE_OAK_SLAB = registerBlock("white_oak_slab", properties -> flammableSlab(
             properties.strength(2f, 3f).sound(SoundType.WOOD)));
     public static final DeferredBlock<Block> WHITE_OAK_WALL = registerBlock("white_oak_wall", properties -> flammableWall(
-            properties.strength(2f, 3f).sound(SoundType.STONE)));
+            properties.strength(2f, 3f).sound(SoundType.WOOD)));
     public static final DeferredBlock<Block> WHITE_OAK_FENCE = registerBlock("white_oak_fence", properties -> flammableFence(
             properties.strength(2f, 3f).sound(SoundType.WOOD)));
     public static final DeferredBlock<Block> WHITE_OAK_FENCE_GATE = registerBlock("white_oak_fence_gate", properties -> flammableFenceGate(WoodType.OAK,

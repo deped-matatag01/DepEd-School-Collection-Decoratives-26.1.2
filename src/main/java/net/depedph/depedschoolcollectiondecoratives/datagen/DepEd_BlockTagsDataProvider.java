@@ -63,6 +63,7 @@ public class DepEd_BlockTagsDataProvider extends BlockTagsProvider {
                 .add(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get())
                 .add(DepEd_WoodenBlocks.WHITE_OAK_STAIRS.get())
                 .add(DepEd_WoodenBlocks.WHITE_OAK_SLAB.get())
+                .add(DepEd_WoodenBlocks.WHITE_OAK_WALL.get())
                 .add(DepEd_WoodenBlocks.WHITE_OAK_FENCE.get())
                 .add(DepEd_WoodenBlocks.WHITE_OAK_FENCE_GATE.get())
                 .add(DepEd_WoodenBlocks.WHITE_OAK_BUTTON.get())
