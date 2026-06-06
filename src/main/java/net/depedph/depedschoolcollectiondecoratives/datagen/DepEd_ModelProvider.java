@@ -56,8 +56,11 @@ public class DepEd_ModelProvider extends ModelProvider {
         blockModels.createTrivialCube(DepEd_Blocks.GMANHS_BLOCK.get());
 
         //deped decorative blocks
+        blockModels.createTrivialCube(DepEd_Blocks.BAKED_SUGARCANE_BLOCK.get());
+        blockModels.createTrivialCube(DepEd_Blocks.SUGARCANE_BLOCK.get());
         blockModels.createTrivialCube(DepEd_Blocks.THE_GMATHS_TORCH.get());
         blockModels.createTrivialCube(DepEd_Blocks.THE_GMATHS_TORCH_MK_II.get());
+        blockModels.createTrivialCube(DepEd_Blocks.YES_O.get());
 
         //ores and raw blocks
         blockModels.createTrivialCube(DepEd_OreBlocks.DEPED_ORE.get());

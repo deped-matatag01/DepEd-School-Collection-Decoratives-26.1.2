@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": "dscd26:gmaths_core",
+    "F": "#minecraft:flowers",
+    "L": "#minecraft:leaves",
+    "M": "minecraft:bone_meal"
+  },
+  "pattern": [
+    "LFL",
+    "MCM",
+    "LFL"
+  ],
+  "result": {
+    "count": 16,
+    "id": "dscd26:yes_o"
+  }
+}

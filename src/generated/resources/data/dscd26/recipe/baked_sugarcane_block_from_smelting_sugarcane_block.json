@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "baked_sugarcane_block",
+  "ingredient": "dscd26:sugarcane_block",
+  "result": {
+    "id": "dscd26:baked_sugarcane_block"
+  }
+}

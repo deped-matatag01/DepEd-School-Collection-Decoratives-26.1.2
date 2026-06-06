@@ -53,10 +53,16 @@ public class DepEd_Blocks {
             properties.strength(1f, 1.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     //deped decorative blocks
+    public static final DeferredBlock<Block> BAKED_SUGARCANE_BLOCK =registerBlock("baked_sugarcane_block", properties -> new Block(
+            properties.strength(1.5f, 3f).lightLevel(state -> 15).sound(SoundType.GRASS)));
+    public static final DeferredBlock<Block> SUGARCANE_BLOCK =registerBlock("sugarcane_block", properties -> new Block(
+            properties.strength(1.5f, 3f).lightLevel(state -> 15).sound(SoundType.GRASS)));
     public static final DeferredBlock<Block> THE_GMATHS_TORCH =registerBlock("the_gmaths_torch", properties -> new Block(
             properties.strength(1f, 1.5f).lightLevel(state -> 7).requiresCorrectToolForDrops().sound(SoundType.LANTERN)));
     public static final DeferredBlock<Block> THE_GMATHS_TORCH_MK_II =registerBlock("the_gmaths_torch_mk_ii", properties -> new Block(
             properties.strength(1.5f, 3f).lightLevel(state -> 15).requiresCorrectToolForDrops().sound(SoundType.LANTERN)));
+    public static final DeferredBlock<Block> YES_O =registerBlock("yes_o", properties -> new Block(
+            properties.strength(0.9f, 0.5f).lightLevel(state -> 15).sound(SoundType.CHERRY_LEAVES)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
         DeferredBlock<T> toReturn = DEPED_BLOCKS.registerBlock(name, function); registerBlockItem(name, toReturn);

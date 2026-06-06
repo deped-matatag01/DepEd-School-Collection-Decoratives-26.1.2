@@ -69,9 +69,12 @@ public class DepEd_BlockTagsDataProvider extends BlockTagsProvider {
                 .add(DepEd_WoodenBlocks.WHITE_OAK_BUTTON.get())
                 .add(DepEd_WoodenBlocks.WHITE_OAK_PRESSURE_PLATE.get());
 
-        tag(BlockTags.MINEABLE_WITH_HOE);
+        tag(BlockTags.MINEABLE_WITH_HOE)
 
                 //yes-o ez destructible block
+                .add(DepEd_Blocks.BAKED_SUGARCANE_BLOCK.get())
+                .add(DepEd_Blocks.SUGARCANE_BLOCK.get())
+                .add(DepEd_Blocks.YES_O.get());
 
         //requires specific tools to mine
         tag(BlockTags.NEEDS_STONE_TOOL)

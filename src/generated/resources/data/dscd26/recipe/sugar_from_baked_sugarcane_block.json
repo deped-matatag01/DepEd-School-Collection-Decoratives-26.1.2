@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "dscd26:baked_sugarcane_block"
+  ],
+  "result": {
+    "count": 27,
+    "id": "minecraft:sugar"
+  }
+}

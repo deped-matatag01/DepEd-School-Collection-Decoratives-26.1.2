@@ -9,11 +9,11 @@ import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.common.Tags;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -93,20 +93,33 @@ public class DepEd_RecipeDataProvider extends RecipeProvider {
                 .unlockedBy(getHasName(DepEd_CoreItems.DEPED_CORE.get()), has(DepEd_CoreItems.DEPED_CORE))
                 .group("deped_block")
                 .save(output);
-
         stairBuilder(DepEd_Blocks.DEPED_STAIRS, Ingredient.of(DepEd_Blocks.DEPED_BLOCK))
                 .unlockedBy(getHasName(DepEd_Blocks.DEPED_BLOCK.get()), has(DepEd_Blocks.DEPED_BLOCK))
                 .group("deped_stairs")
                 .save(output);
-
         slab(RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.DEPED_SLAB.get(), DepEd_Blocks.DEPED_BLOCK.get());
         wall(RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.DEPED_WALL.get(), DepEd_Blocks.DEPED_BLOCK.get());
-
         buttonBuilder(DepEd_Blocks.DEPED_BUTTON.get(), Ingredient.of(DepEd_Blocks.DEPED_BLOCK.get()))
                 .unlockedBy(getHasName(DepEd_Blocks.DEPED_BLOCK.get()), has(DepEd_Blocks.DEPED_BLOCK))
                 .group("deped_buttons")
                 .save(output);
         pressurePlate(DepEd_Blocks.DEPED_PRESSURE_PLATE.get(), DepEd_Blocks.DEPED_BLOCK.get());
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(DepEd_Blocks.DEPED_BLOCK), RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.DEPED_STAIRS, 2)
+                .unlockedBy(getHasName(DepEd_Blocks.DEPED_BLOCK.get()), has(DepEd_Blocks.DEPED_BLOCK))
+                .save(output, "dscd26:deped_stairs_from_stonecutting");
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(DepEd_Blocks.DEPED_BLOCK), RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.DEPED_SLAB, 2)
+                .unlockedBy(getHasName(DepEd_Blocks.DEPED_BLOCK.get()), has(DepEd_Blocks.DEPED_BLOCK))
+                .save(output, "dscd26:deped_slab_from_stonecutting");
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(DepEd_Blocks.DEPED_BLOCK), RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.DEPED_WALL, 2)
+                .unlockedBy(getHasName(DepEd_Blocks.DEPED_BLOCK.get()), has(DepEd_Blocks.DEPED_BLOCK))
+                .save(output, "dscd26:deped_wall_from_stonecutting");
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(DepEd_Blocks.DEPED_BLOCK), RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.DEPED_BUTTON, 2)
+                .unlockedBy(getHasName(DepEd_Blocks.DEPED_BLOCK.get()), has(DepEd_Blocks.DEPED_BLOCK))
+                .save(output, "dscd26:deped_button_from_stonecutting");
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(DepEd_Blocks.DEPED_BLOCK), RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.DEPED_PRESSURE_PLATE, 2)
+                .unlockedBy(getHasName(DepEd_Blocks.DEPED_BLOCK.get()), has(DepEd_Blocks.DEPED_BLOCK))
+                .save(output, "dscd26:deped_pressure_plate_from_stonecutting");
 
         //Materials - GMATHS ingredients
         List<ItemLike> GMATHS_MINERAL_SMELTABLES = List.of(
@@ -158,20 +171,33 @@ public class DepEd_RecipeDataProvider extends RecipeProvider {
                 .unlockedBy(getHasName(DepEd_CoreItems.GMATHS_CORE.get()), has(DepEd_CoreItems.GMATHS_CORE))
                 .group("deped_block")
                 .save(output);
-
         stairBuilder(DepEd_Blocks.GMATHS_STAIRS, Ingredient.of(DepEd_Blocks.GMATHS_BLOCK))
                 .unlockedBy(getHasName(DepEd_Blocks.GMATHS_BLOCK.get()), has(DepEd_Blocks.GMATHS_BLOCK))
                 .group("deped_stairs")
                 .save(output);
-
         slab(RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.GMATHS_SLAB.get(), DepEd_Blocks.GMATHS_BLOCK.get());
         wall(RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.GMATHS_WALL.get(), DepEd_Blocks.GMATHS_BLOCK.get());
-
         buttonBuilder(DepEd_Blocks.GMATHS_BUTTON.get(), Ingredient.of(DepEd_Blocks.GMATHS_BLOCK.get()))
                 .unlockedBy(getHasName(DepEd_Blocks.GMATHS_BLOCK.get()), has(DepEd_Blocks.GMATHS_BLOCK))
                 .group("deped_buttons")
                 .save(output);
         pressurePlate(DepEd_Blocks.GMATHS_PRESSURE_PLATE.get(), DepEd_Blocks.GMATHS_BLOCK.get());
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(DepEd_Blocks.GMATHS_BLOCK), RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.GMATHS_STAIRS, 2)
+                .unlockedBy(getHasName(DepEd_Blocks.GMATHS_BLOCK.get()), has(DepEd_Blocks.GMATHS_BLOCK))
+                .save(output, "dscd26:gmaths_stairs_from_stonecutting");
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(DepEd_Blocks.GMATHS_BLOCK), RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.GMATHS_SLAB, 2)
+                .unlockedBy(getHasName(DepEd_Blocks.GMATHS_BLOCK.get()), has(DepEd_Blocks.GMATHS_BLOCK))
+                .save(output, "dscd26:gmaths_slab_from_stonecutting");
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(DepEd_Blocks.GMATHS_BLOCK), RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.GMATHS_WALL, 2)
+                .unlockedBy(getHasName(DepEd_Blocks.GMATHS_BLOCK.get()), has(DepEd_Blocks.GMATHS_BLOCK))
+                .save(output, "dscd26:gmaths_wall_from_stonecutting");
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(DepEd_Blocks.GMATHS_BLOCK), RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.GMATHS_BUTTON, 2)
+                .unlockedBy(getHasName(DepEd_Blocks.GMATHS_BLOCK.get()), has(DepEd_Blocks.GMATHS_BLOCK))
+                .save(output, "dscd26:gmaths_button_from_stonecutting");
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(DepEd_Blocks.GMATHS_BLOCK), RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.GMATHS_PRESSURE_PLATE, 2)
+                .unlockedBy(getHasName(DepEd_Blocks.GMATHS_BLOCK.get()), has(DepEd_Blocks.GMATHS_BLOCK))
+                .save(output, "dscd26:gmaths_pressure_plate_from_stonecutting");
 
         //White wood types
         shaped(RecipeCategory.BUILDING_BLOCKS, DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get(), 8)
@@ -204,7 +230,76 @@ public class DepEd_RecipeDataProvider extends RecipeProvider {
                 .group("deped_buttons")
                 .save(output);
         pressurePlate(DepEd_WoodenBlocks.WHITE_OAK_PRESSURE_PLATE.get(), DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get());
+
+        //Misc Recipes
+        shapeless(RecipeCategory.MISC, Items.SUGAR_CANE, 9)
+                .requires(DepEd_Blocks.SUGARCANE_BLOCK)
+                .unlockedBy("has_sugar_cane", has(Items.SUGAR_CANE))
+                .save(output, "dscd26:sugar_cane_from_sugarcane_block");
+
+        shapeless(RecipeCategory.MISC, Items.SUGAR, 27)
+                .requires(DepEd_Blocks.BAKED_SUGARCANE_BLOCK)
+                .unlockedBy("has_baked_sugarcane_block", has(DepEd_Blocks.BAKED_SUGARCANE_BLOCK))
+                .save(output, "dscd26:sugar_from_baked_sugarcane_block");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.YES_O, 16)
+                .pattern("LFL")
+                .pattern("MCM")
+                .pattern("LFL")
+                .define('F', ItemTags.FLOWERS)
+                .define('L', ItemTags.LEAVES)
+                .define('C', DepEd_CoreItems.GMATHS_CORE)
+                .define('M', Items.BONE_MEAL)
+                .unlockedBy(getHasName(DepEd_CoreItems.GMATHS_CORE), has(DepEd_CoreItems.GMATHS_CORE))
+                .save(output);
+
+        List<ItemLike> SUGAR_CANE_BAKEABLES = List.of(
+                DepEd_Blocks.SUGARCANE_BLOCK
+        );
+
+        oreSmelting(SUGAR_CANE_BAKEABLES, RecipeCategory.FOOD, CookingBookCategory.FOOD, DepEd_Blocks.BAKED_SUGARCANE_BLOCK.get(), 0.25f, 200, "baked_sugarcane_block");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.THE_GMATHS_TORCH, 4)
+                .pattern("PLP")
+                .pattern("LCL")
+                .pattern("PLP")
+                .define('P', Tags.Items.NUGGETS_IRON)
+                .define('C', ItemTags.BUTTONS)
+                .define('L', Items.LANTERN)
+                .unlockedBy("has_buttons", has(ItemTags.BUTTONS))
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.THE_GMATHS_TORCH, 16)
+                .pattern("PLP")
+                .pattern("LCL")
+                .pattern("PLP")
+                .define('P', ItemTags.PLANKS)
+                .define('C', DepEd_CoreItems.DEPED_CORE)
+                .define('L', Items.LANTERN)
+                .unlockedBy(getHasName(DepEd_CoreItems.DEPED_CORE), has(DepEd_CoreItems.DEPED_CORE))
+                .save(output, "dscd26:the_gmaths_torch_bulk_recipe");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.THE_GMATHS_TORCH_MK_II, 4)
+                .pattern("PLP")
+                .pattern("LCL")
+                .pattern("PLP")
+                .define('P', Tags.Items.NUGGETS_GOLD)
+                .define('C', ItemTags.BUTTONS)
+                .define('L', Items.LANTERN)
+                .unlockedBy("has_buttons", has(ItemTags.BUTTONS))
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, DepEd_Blocks.THE_GMATHS_TORCH_MK_II, 16)
+                .pattern("PLP")
+                .pattern("LCL")
+                .pattern("PLP")
+                .define('P', ItemTags.PLANKS)
+                .define('C', DepEd_CoreItems.GMATHS_CORE)
+                .define('L', DepEd_Blocks.THE_GMATHS_TORCH)
+                .unlockedBy(getHasName(DepEd_Blocks.THE_GMATHS_TORCH), has(DepEd_Blocks.THE_GMATHS_TORCH))
+                .save(output, "dscd26:the_gmaths_torch_mk_ii_bulk_recipe");
     }
+
 
     @Override
     protected <T extends AbstractCookingRecipe> void oreCooking(AbstractCookingRecipe.Factory<T> factory, List<ItemLike> smeltables, RecipeCategory craftingCategory,

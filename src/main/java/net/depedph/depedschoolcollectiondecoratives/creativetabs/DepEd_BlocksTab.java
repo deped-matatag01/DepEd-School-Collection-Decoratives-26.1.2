@@ -38,8 +38,11 @@ public class DepEd_BlocksTab {
                 output.accept(DepEd_Blocks.GMANHS_BLOCK);
 
                 //deped decorative blocks
+                output.accept(DepEd_Blocks.BAKED_SUGARCANE_BLOCK);
+                output.accept(DepEd_Blocks.SUGARCANE_BLOCK);
                 output.accept(DepEd_Blocks.THE_GMATHS_TORCH);
                 output.accept(DepEd_Blocks.THE_GMATHS_TORCH_MK_II);
+                output.accept(DepEd_Blocks.YES_O);
 
                 //ores and raw blocks
                 output.accept(DepEd_OreBlocks.DEPED_ORE);

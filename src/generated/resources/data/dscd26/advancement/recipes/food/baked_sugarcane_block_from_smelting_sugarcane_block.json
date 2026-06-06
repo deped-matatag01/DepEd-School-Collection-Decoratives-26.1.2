@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sugarcane_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dscd26:sugarcane_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dscd26:baked_sugarcane_block_from_smelting_sugarcane_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sugarcane_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dscd26:baked_sugarcane_block_from_smelting_sugarcane_block"
+    ]
+  }
+}

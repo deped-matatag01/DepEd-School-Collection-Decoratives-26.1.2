@@ -48,8 +48,11 @@ public class DepEd_LootTableDataProvider extends BlockLootSubProvider {
         dropSelf(DepEd_Blocks.GMANHS_BLOCK.get());
 
         //deped decorative blocks
+        dropSelf(DepEd_Blocks.BAKED_SUGARCANE_BLOCK.get());
+        dropSelf(DepEd_Blocks.SUGARCANE_BLOCK.get());
         dropSelf(DepEd_Blocks.THE_GMATHS_TORCH.get());
         dropSelf(DepEd_Blocks.THE_GMATHS_TORCH_MK_II.get());
+        dropSelf(DepEd_Blocks.YES_O.get());
 
         //ore and raw blocks
         add(DepEd_OreBlocks.DEPED_ORE.get(), createMultipleOreDrops(DepEd_OreBlocks.DEPED_ORE.get(), DepEd_Ingredients.RAW_DEPED.get(), 1, 4));

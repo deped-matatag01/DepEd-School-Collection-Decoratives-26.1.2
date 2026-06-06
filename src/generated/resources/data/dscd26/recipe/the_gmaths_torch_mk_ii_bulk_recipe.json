@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": "dscd26:gmaths_core",
+    "L": "dscd26:the_gmaths_torch",
+    "P": "#minecraft:planks"
+  },
+  "pattern": [
+    "PLP",
+    "LCL",
+    "PLP"
+  ],
+  "result": {
+    "count": 16,
+    "id": "dscd26:the_gmaths_torch_mk_ii"
+  }
+}
