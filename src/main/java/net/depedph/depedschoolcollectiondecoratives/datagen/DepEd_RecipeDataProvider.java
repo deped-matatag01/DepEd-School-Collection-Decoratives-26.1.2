@@ -3,14 +3,13 @@ package net.depedph.depedschoolcollectiondecoratives.datagen;
 import net.depedph.depedschoolcollectiondecoratives.DepEDSchoolCollectionDecoratives;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_OreBlocks;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_WoodenBlocks;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_CoreItems;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.data.recipes.*;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
@@ -173,6 +172,38 @@ public class DepEd_RecipeDataProvider extends RecipeProvider {
                 .group("deped_buttons")
                 .save(output);
         pressurePlate(DepEd_Blocks.GMATHS_PRESSURE_PLATE.get(), DepEd_Blocks.GMATHS_BLOCK.get());
+
+        //White wood types
+        shaped(RecipeCategory.BUILDING_BLOCKS, DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get(), 8)
+                .pattern("PPP")
+                .pattern("PCP")
+                .pattern("PPP")
+                .define('P', ItemTags.PLANKS)
+                .define('C', Items.WHITE_DYE)
+                .unlockedBy("has_wooden_planks", has(ItemTags.PLANKS))
+                .save(output);
+        stairBuilder(DepEd_WoodenBlocks.WHITE_OAK_STAIRS, Ingredient.of(DepEd_WoodenBlocks.WHITE_OAK_PLANKS))
+                .unlockedBy(getHasName(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get()), has(DepEd_WoodenBlocks.WHITE_OAK_PLANKS))
+                .group("deped_colored_stairs")
+                .save(output);
+
+        slab(RecipeCategory.BUILDING_BLOCKS, DepEd_WoodenBlocks.WHITE_OAK_SLAB.get(), DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get());
+        wall(RecipeCategory.BUILDING_BLOCKS, DepEd_WoodenBlocks.WHITE_OAK_WALL.get(), DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get());
+
+        fenceBuilder(DepEd_WoodenBlocks.WHITE_OAK_FENCE.get(), Ingredient.of(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get()))
+                .unlockedBy(getHasName(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get()), has(DepEd_WoodenBlocks.WHITE_OAK_PLANKS))
+                .group("deped_colored_fence")
+                .save(output);
+        fenceGateBuilder(DepEd_WoodenBlocks.WHITE_OAK_FENCE_GATE.get(), Ingredient.of(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get()))
+                .unlockedBy(getHasName(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get()), has(DepEd_WoodenBlocks.WHITE_OAK_PLANKS))
+                .group("deped_colored_fence_gate")
+                .save(output);
+
+        buttonBuilder(DepEd_WoodenBlocks.WHITE_OAK_BUTTON.get(), Ingredient.of(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get()))
+                .unlockedBy(getHasName(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get()), has(DepEd_WoodenBlocks.WHITE_OAK_PLANKS))
+                .group("deped_buttons")
+                .save(output);
+        pressurePlate(DepEd_WoodenBlocks.WHITE_OAK_PRESSURE_PLATE.get(), DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get());
     }
 
     @Override

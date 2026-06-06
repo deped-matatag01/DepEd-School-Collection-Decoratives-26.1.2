@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "dscd26:white_oak_planks"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "dscd26:white_oak_pressure_plate"
+  }
+}

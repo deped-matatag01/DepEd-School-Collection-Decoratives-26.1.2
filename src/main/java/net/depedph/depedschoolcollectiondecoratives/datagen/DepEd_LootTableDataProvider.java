@@ -2,6 +2,7 @@ package net.depedph.depedschoolcollectiondecoratives.datagen;
 
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_OreBlocks;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_WoodenBlocks;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
@@ -63,6 +64,14 @@ public class DepEd_LootTableDataProvider extends BlockLootSubProvider {
         dropSelf(DepEd_OreBlocks.RAW_GMANHS_BLOCK.get());
 
         //wooden blocks
+        dropSelf(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get());
+        dropSelf(DepEd_WoodenBlocks.WHITE_OAK_STAIRS.get());
+        add(DepEd_WoodenBlocks.WHITE_OAK_SLAB.get(), this::createSlabItemTable);
+        dropSelf(DepEd_WoodenBlocks.WHITE_OAK_WALL.get());
+        dropSelf(DepEd_WoodenBlocks.WHITE_OAK_FENCE.get());
+        dropSelf(DepEd_WoodenBlocks.WHITE_OAK_FENCE_GATE.get());
+        dropSelf(DepEd_WoodenBlocks.WHITE_OAK_BUTTON.get());
+        dropSelf(DepEd_WoodenBlocks.WHITE_OAK_PRESSURE_PLATE.get());
 
     }
 
@@ -79,8 +88,8 @@ public class DepEd_LootTableDataProvider extends BlockLootSubProvider {
         return Stream.of(
 
                 DepEd_Blocks.DEPED_BLOCKS.getEntries().stream(),
-                DepEd_OreBlocks.DEPED_ORE_BLOCKS.getEntries().stream()
-                //DepEd_WoodenBlocks.DEPED_WOODEN_BLOCKS.getEntries().stream()
+                DepEd_OreBlocks.DEPED_ORE_BLOCKS.getEntries().stream(),
+                DepEd_WoodenBlocks.DEPED_WOODEN_BLOCKS.getEntries().stream()
 
         ).flatMap(stream -> stream.map(Holder::value))::iterator;
     }

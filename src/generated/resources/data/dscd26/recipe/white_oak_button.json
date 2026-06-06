@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "deped_buttons",
+  "ingredients": [
+    "dscd26:white_oak_planks"
+  ],
+  "result": {
+    "id": "dscd26:white_oak_button"
+  }
+}

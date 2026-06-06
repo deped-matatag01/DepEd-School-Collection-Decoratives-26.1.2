@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "deped_colored_fence_gate",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "dscd26:white_oak_planks"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "dscd26:white_oak_fence_gate"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dscd26:white_oak_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_oak_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dscd26:white_oak_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_white_oak_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dscd26:white_oak_stairs"
+    ]
+  }
+}

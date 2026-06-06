@@ -1,3 +1,11 @@
 {
-  "values": []
+  "values": [
+    "dscd26:white_oak_planks",
+    "dscd26:white_oak_stairs",
+    "dscd26:white_oak_slab",
+    "dscd26:white_oak_fence",
+    "dscd26:white_oak_fence_gate",
+    "dscd26:white_oak_button",
+    "dscd26:white_oak_pressure_plate"
+  ]
 }

@@ -2,6 +2,7 @@ package net.depedph.depedschoolcollectiondecoratives.datagen;
 
 import net.depedph.depedschoolcollectiondecoratives.DepEDSchoolCollectionDecoratives;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_WoodenBlocks;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_CoreItems;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.depedph.depedschoolcollectiondecoratives.tags.DepEd_Tags;
@@ -65,25 +66,34 @@ public class DepEd_ItemTagsDataProvider extends ItemTagsProvider {
 
         tag(ItemTags.WALLS)
                 .add(DepEd_Blocks.DEPED_WALL.asItem())
-                .add(DepEd_Blocks.GMATHS_WALL.asItem());
+                .add(DepEd_Blocks.GMATHS_WALL.asItem())
+
+                .add(DepEd_WoodenBlocks.WHITE_OAK_WALL.asItem());
 
         tag(ItemTags.STONE_BUTTONS)
                 .add(DepEd_Blocks.DEPED_BUTTON.asItem())
                 .add(DepEd_Blocks.GMATHS_BUTTON.asItem());
 
         //Flammability Wooden Items
-        tag(ItemTags.PLANKS);
+        tag(ItemTags.PLANKS)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.asItem());
 
-        tag(ItemTags.WOODEN_STAIRS);
+        tag(ItemTags.WOODEN_STAIRS)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_STAIRS.asItem());
 
-        tag(ItemTags.WOODEN_SLABS);
+        tag(ItemTags.WOODEN_SLABS)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_SLAB.asItem());;
 
-        tag(ItemTags.WOODEN_FENCES);
+        tag(ItemTags.WOODEN_FENCES)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_FENCE.asItem());
 
-        tag(ItemTags.FENCE_GATES);
+        tag(ItemTags.FENCE_GATES)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_FENCE_GATE.asItem());
 
-        tag(ItemTags.WOODEN_BUTTONS);
+        tag(ItemTags.WOODEN_BUTTONS)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_BUTTON.asItem());
 
-        tag(ItemTags.WOODEN_PRESSURE_PLATES);
+        tag(ItemTags.WOODEN_PRESSURE_PLATES)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_PRESSURE_PLATE.asItem());
     }
 }

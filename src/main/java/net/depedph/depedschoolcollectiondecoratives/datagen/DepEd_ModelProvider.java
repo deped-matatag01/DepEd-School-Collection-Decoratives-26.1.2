@@ -3,6 +3,7 @@ package net.depedph.depedschoolcollectiondecoratives.datagen;
 import net.depedph.depedschoolcollectiondecoratives.DepEDSchoolCollectionDecoratives;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_OreBlocks;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_WoodenBlocks;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_CoreItems;
 import net.depedph.depedschoolcollectiondecoratives.items.DepEd_Ingredients;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -54,7 +55,6 @@ public class DepEd_ModelProvider extends ModelProvider {
 
         blockModels.createTrivialCube(DepEd_Blocks.GMANHS_BLOCK.get());
 
-
         //deped decorative blocks
         blockModels.createTrivialCube(DepEd_Blocks.THE_GMATHS_TORCH.get());
         blockModels.createTrivialCube(DepEd_Blocks.THE_GMATHS_TORCH_MK_II.get());
@@ -73,5 +73,13 @@ public class DepEd_ModelProvider extends ModelProvider {
         blockModels.createTrivialCube(DepEd_OreBlocks.RAW_GMANHS_BLOCK.get());
 
         //wooden blocks
+        blockModels.family(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get())
+                .stairs(DepEd_WoodenBlocks.WHITE_OAK_STAIRS.get())
+                .slab(DepEd_WoodenBlocks.WHITE_OAK_SLAB.get())
+                .wall(DepEd_WoodenBlocks.WHITE_OAK_WALL.get())
+                .fence(DepEd_WoodenBlocks.WHITE_OAK_FENCE.get())
+                .fenceGate(DepEd_WoodenBlocks.WHITE_OAK_FENCE_GATE.get())
+                .button(DepEd_WoodenBlocks.WHITE_OAK_BUTTON.get())
+                .pressurePlate(DepEd_WoodenBlocks.WHITE_OAK_PRESSURE_PLATE.get());
     }
 }

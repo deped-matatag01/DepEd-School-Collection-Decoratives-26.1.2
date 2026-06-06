@@ -38,6 +38,15 @@
   "block.dscd26.sugarcane_block": "Block of Sugarcane",
   "block.dscd26.baked_sugarcane_block": "Block of Baked Sugarcane",
 
+  "block.dscd26.white_oak_planks": "White Oak Planks",
+  "block.dscd26.white_oak_stairs": "White Oak Stairs",
+  "block.dscd26.white_oak_slab": "White Oak Slab",
+  "block.dscd26.white_oak_wall": "White Oak Wall",
+  "block.dscd26.white_oak_fence": "White Oak Fence",
+  "block.dscd26.white_oak_fence_gate": "White Oak Fence Gate",
+  "block.dscd26.white_oak_button": "White Oak Button",
+  "block.dscd26.white_oak_pressure_plate": "White Oak Pressure Plate",
+
   "item.dscd26.deped_core": "DepED Core",
   "item.dscd26.gmaths_core": "GMATHS Core",
   "item.dscd26.gmanhs_core": "GMANHS Core",

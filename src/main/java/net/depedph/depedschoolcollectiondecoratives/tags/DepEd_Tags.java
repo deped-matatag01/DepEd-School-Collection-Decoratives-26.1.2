@@ -11,6 +11,8 @@ import net.minecraft.world.level.block.Block;
 public class DepEd_Tags {
     public static class DepEdBlockTags {
 
+        public static final TagKey<Block> WALL_FLAMMABILITY = createBlockTag("wall_flammability");
+
         private static TagKey<Block> createBlockTag(String name) {
             return BlockTags.create(Identifier.fromNamespaceAndPath(DepEDSchoolCollectionDecoratives.MOD_ID, name));
         }

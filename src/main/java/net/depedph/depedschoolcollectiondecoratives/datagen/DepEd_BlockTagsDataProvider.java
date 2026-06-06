@@ -3,6 +3,7 @@ package net.depedph.depedschoolcollectiondecoratives.datagen;
 import net.depedph.depedschoolcollectiondecoratives.DepEDSchoolCollectionDecoratives;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_Blocks;
 import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_OreBlocks;
+import net.depedph.depedschoolcollectiondecoratives.blocks.DepEd_WoodenBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -37,7 +38,7 @@ public class DepEd_BlockTagsDataProvider extends BlockTagsProvider {
                 .add(DepEd_Blocks.GMATHS_BUTTON.get())
                 .add(DepEd_Blocks.GMATHS_PRESSURE_PLATE.get())
 
-                .add(DepEd_Blocks.GMATHS_BLOCK.get())
+                .add(DepEd_Blocks.GMANHS_BLOCK.get())
 
                 //deped decorative blocks
                 .add(DepEd_Blocks.THE_GMATHS_TORCH.get())
@@ -56,9 +57,16 @@ public class DepEd_BlockTagsDataProvider extends BlockTagsProvider {
                 .add(DepEd_OreBlocks.RAW_GMATHS_BLOCK.get())
                 .add(DepEd_OreBlocks.RAW_GMANHS_BLOCK.get());
 
-        tag(BlockTags.MINEABLE_WITH_AXE);
+        tag(BlockTags.MINEABLE_WITH_AXE)
 
                 //deped wooden blocks
+                .add(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get())
+                .add(DepEd_WoodenBlocks.WHITE_OAK_STAIRS.get())
+                .add(DepEd_WoodenBlocks.WHITE_OAK_SLAB.get())
+                .add(DepEd_WoodenBlocks.WHITE_OAK_FENCE.get())
+                .add(DepEd_WoodenBlocks.WHITE_OAK_FENCE_GATE.get())
+                .add(DepEd_WoodenBlocks.WHITE_OAK_BUTTON.get())
+                .add(DepEd_WoodenBlocks.WHITE_OAK_PRESSURE_PLATE.get());
 
         tag(BlockTags.MINEABLE_WITH_HOE);
 
@@ -115,7 +123,9 @@ public class DepEd_BlockTagsDataProvider extends BlockTagsProvider {
 
         tag(BlockTags.WALLS)
                 .add(DepEd_Blocks.DEPED_WALL.get())
-                .add(DepEd_Blocks.GMATHS_WALL.get());
+                .add(DepEd_Blocks.GMATHS_WALL.get())
+
+                .add(DepEd_WoodenBlocks.WHITE_OAK_WALL.get());
 
         tag(BlockTags.STONE_BUTTONS)
                 .add(DepEd_Blocks.DEPED_BUTTON.get())
@@ -126,18 +136,25 @@ public class DepEd_BlockTagsDataProvider extends BlockTagsProvider {
                 .add(DepEd_Blocks.GMATHS_PRESSURE_PLATE.get());
 
         //wooden block tags
-        tag(BlockTags.PLANKS);
+        tag(BlockTags.PLANKS)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_PLANKS.get());
 
-        tag(BlockTags.WOODEN_STAIRS);
+        tag(BlockTags.WOODEN_STAIRS)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_STAIRS.get());
 
-        tag(BlockTags.WOODEN_SLABS);
+        tag(BlockTags.WOODEN_SLABS)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_SLAB.get());
 
-        tag(BlockTags.WOODEN_FENCES);
+        tag(BlockTags.WOODEN_FENCES)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_FENCE.get());
 
-        tag(BlockTags.FENCE_GATES);
+        tag(BlockTags.FENCE_GATES)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_FENCE_GATE.get());
 
-        tag(BlockTags.WOODEN_BUTTONS);
+        tag(BlockTags.WOODEN_BUTTONS)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_BUTTON.get());
 
-        tag(BlockTags.WOODEN_PRESSURE_PLATES);
+        tag(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(DepEd_WoodenBlocks.WHITE_OAK_PRESSURE_PLATE.get());
     }
 }
